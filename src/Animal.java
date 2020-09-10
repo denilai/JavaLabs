@@ -7,6 +7,8 @@ public class Animal {
         return a+b;
     }
 
+
+
     void mes (String message){
         System.out.println(message);
     }
