@@ -63,22 +63,24 @@ public class TicTacGame {
     private void setHandlers(){
         canvas.forEach(cell -> {
             cell.image.setOnMouseClicked(mouseEvent -> {
-                if(cell.getRecord()== Record.EMPTY&&!gameOver&&winner==Record.EMPTY) {
-                    if (isXMove) {
-                        cell.image.setImage(new Image(Main.class.getResourceAsStream("x.png")));
-                        cell.setRecord(Record.X);
-                        isXMove = false;
-                    } else {
-                        cell.image.setImage(new Image(Main.class.getResourceAsStream("o.png")));
-                        cell.setRecord(Record.O);
-                        isXMove = true;
+                if(!gameOver) {
+                    if (cell.getRecord() == Record.EMPTY) {
+                        if (isXMove) {
+                            cell.image.setImage(new Image(Main.class.getResourceAsStream("x.png")));
+                            cell.setRecord(Record.X);
+                            isXMove = false;
+                        } else {
+                            cell.image.setImage(new Image(Main.class.getResourceAsStream("o.png")));
+                            cell.setRecord(Record.O);
+                            isXMove = true;
+                        }
                     }
+                    setLabel();
+                    // проверка статуса игры: Победа Х | Победа О | Ничья
+                    gameStatus();
+                    if (gameOver)
+                        congratulations();
                 }
-                setLabel();
-                // проверка статуса игры: Победа Х | Победа О | Ничья
-                gameStatus();
-                if(gameOver)
-                    congratulations();
             });
         });
     }
