@@ -1,8 +1,5 @@
 package com.company;
 
-import jdk.jshell.spi.SPIResolutionException;
-
-import java.sql.SQLOutput;
 
 public class PersonParser {
 

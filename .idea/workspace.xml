@@ -1,35 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a817073-93a2-4204-a1bd-d16b69083801" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sandbox.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Sandbox/Animal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Sandbox/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Animal.java" beforeDir="false" />
+    <list default="true" id="46d669d0-b449-4046-a317-3e7e19e9d69b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pract10.1/Pract10.1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Pract10.1/Pract10.1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pract11_XO/Pract11_XO.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Pract11_XO/Pract11_XO.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pract12/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Pract12/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pract12/Pract12.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Pract12/Pract12.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pract12/out/production/Pract12/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pract12/out/production/Pract12/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pract12/out/production/Pract12/com/company/PersonParser$Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pract12/out/production/Pract12/com/company/PersonParser$Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pract12/out/production/Pract12/com/company/PersonParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pract12/out/production/Pract12/com/company/PersonParser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pract12/out/production/Pract12/com/company/PhoneNum.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pract12/out/production/Pract12/com/company/PhoneNum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pract12/out/production/Pract12/com/company/SalaryParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pract12/out/production/Pract12/com/company/SalaryParser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pract12/src/com/company/PersonParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pract12/src/com/company/PersonParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pract3/Pract3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Pract3/Pract3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pract4and5/Pract4and5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Pract4and5/Pract4and5.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pract6/Pract6.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Pract6/Pract6.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pract7_8/Pract7_8.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Pract7_8/Pract7_8.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pract9/Pract9.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Pract9/Pract9.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,22 +27,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1i8rhAgve2j1ZhhHeLgD2mpjmPF" />
+  <component name="ProjectId" id="1k0rzzfj86NJbFb8hsesDbCQ0Gj" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.0" />
-  </component>
   <component name="RunManager">
-    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="App" />
-      <module name="Sandbox" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
+      <module name="JavaLabs" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -63,64 +47,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="4a817073-93a2-4204-a1bd-d16b69083801" name="Default Changelist" comment="" />
-      <created>1601300177937</created>
+      <changelist id="46d669d0-b449-4046-a317-3e7e19e9d69b" name="Default Changelist" comment="" />
+      <created>1604848615799</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1601300177937</updated>
+      <updated>1604848615799</updated>
     </task>
     <servers />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="121" y="0" key="#Project_Structure" timestamp="1601300744764">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="121" y="0" key="#Project_Structure/0.0.1280.680@0.0.1280.680" timestamp="1601300744764" />
-    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601300737353">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1601300737353" />
-    <state x="371" y="130" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1601300559682">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="371" y="130" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1280.680@0.0.1280.680" timestamp="1601300559682" />
-    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1601300484209">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1601300484209" />
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1601307015842">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1601307015842" />
-    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1601307015842">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1601307015842" />
-    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1601307015841">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1601307015841" />
-    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1601307015842">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1601307015842" />
-    <state x="91" y="0" key="new project wizard" timestamp="1601301291153">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="91" y="0" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1601301291153" />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/JavaLabs$Unnamed.ic" NAME="Unnamed Coverage Results" MODIFIED="1601300971343" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
