@@ -19,9 +19,10 @@ public class Menu {
             System.out.println("1) To-do list");
             System.out.println("2) Email list");
             System.out.println("3) Phone book");
+            System.out.println("4) EXIT");
             try{
                 answer = sc.nextInt();
-                if (answer<1 || answer>3)
+                if (answer<1 || answer>4)
                     throw new MyException ("That task isn't exist");
                 check = true;
             }
@@ -77,6 +78,10 @@ public class Menu {
                     else System.out.println("OK");
                 }while (!line.equals("q"));
                 break;
+            }
+            case 4:{
+                System.out.println("Program finished...");
+                return false;
             }
         }
         return (line.equals("q"));
