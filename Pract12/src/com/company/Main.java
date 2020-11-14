@@ -19,7 +19,7 @@ public class Main {
         System.out.println("Заработок Маши = ");
         System.out.print( parser.someoneSalary("Маша"));
 
-        System.out.println("Task 2");
+        System.out.println("\nTask 2");
         System.out.println("------------------------------------");
         System.out.print("Введите ФИО> ");
         Scanner sc = new Scanner(System.in);

@@ -7,7 +7,7 @@ import java.util.LinkedHashMap;
 public class SalaryParser {
 
     private String text;
-    private String[]words;
+    private ArrayList<String> words;
     private LinkedHashMap <String, Integer> namesMap;
 
     public String getText() {
@@ -37,10 +37,10 @@ public class SalaryParser {
             return -1;
         int salary = 0;
         int from = namesMap.get(name);
-        for( int i = from+1; i < words.length; i++){
-            if(!namesMap.containsKey(words[i])) {
+        for( int i = from+1; i < words.size(); i++){
+            if(!namesMap.containsKey(words.get(i))) {
                 try {
-                    salary = Integer.parseInt(words[i]);
+                    salary = Integer.parseInt(words.get(i));
                 }
                 catch (NumberFormatException a) { }
             }
@@ -49,7 +49,21 @@ public class SalaryParser {
         return salary;
     }
 
-    public String[] words (String line){
-        return line.trim().split(" ");
+//    public String[] words (String line){
+//        return line.trim().split(" ");
+//    }
+
+    public ArrayList<String> words(String line){
+        ArrayList<String> words = new ArrayList<>();
+        String word = "";
+        for ( char ch : line.toCharArray()){
+            if(ch == ' ') {
+                words.add(word);
+                word = "";
+            }
+            else
+                word += ch;
+        }
+        return words;
     }
 }

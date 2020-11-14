@@ -1,6 +1,8 @@
 package com.company;
 
 
+import java.util.ArrayList;
+
 public class PersonParser {
 
      private class Person{
@@ -39,12 +41,12 @@ public class PersonParser {
      private Person person = null;//= new Person("","","");
 
      public PersonParser(String fullName){
-         String[] words = words(fullName);
-         if(words.length == 2) {
-             person = new Person(words[0], words[1]);
+         ArrayList<String> words = words(fullName);
+         if(words.size() == 2) {
+             person = new Person(words.get(0), words.get(1));
          }
-         if(words.length == 3){
-             person = new Person(words[0], words[1],words[2]);
+         if(words.size() == 3){
+             person = new Person(words.get(0), words.get(1),words.get(2));
          }
     }
 
@@ -55,7 +57,17 @@ public class PersonParser {
              System.out.println("Введенная строка не является ФИО!");
     }
 
-    public String[] words (String line){
-        return line.trim().split(" ");
+    public ArrayList<String> words(String line){
+        ArrayList<String> words = new ArrayList<>();
+        String word = "";
+        for ( char ch : line.toCharArray()){
+            if(ch == ' ') {
+                words.add(word);
+                word = "";
+            }
+            else
+                word += ch;
+        }
+        return words;
     }
 }
