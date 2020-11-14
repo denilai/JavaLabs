@@ -19,11 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e26c6d78-ad25-41fb-9238-9d9a9a2e4bc6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Pract11_XO/.idea/libraries/lib1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pract11_XO/Pract11_XO.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Pract11_XO/Pract11_XO.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="e26c6d78-ad25-41fb-9238-9d9a9a2e4bc6" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

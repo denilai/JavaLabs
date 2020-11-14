@@ -20,7 +20,10 @@ public class ToDoList {
 
     public boolean add(int index, String task){
         try{
-            tasks.add(index-1,task);
+            if (index>tasks.size())
+                tasks.add(task);
+            else
+                tasks.add(index-1,task);
             return true;
         }
         catch (IndexOutOfBoundsException a){
