@@ -39,14 +39,19 @@ public class PhoneNum {
 
     private void analyze(String str){
         if(state) {
-//            if (str.length() == 11) {
-//                regionCode = str.substring(1, 4);
-//                userCode = formatUserCode(str.substring(4, 11));
-//            }
-//            if (str.length() == 10) {
-//                regionCode = str.substring(0, 3);
-//                userCode = formatUserCode(str.substring(3, 10));
-//            }
+            if (str.length() == 11) {
+
+                regionCode = str.substring(1, 4);
+                userCode = formatUserCode(str.substring(4, 11));
+
+            }
+            if (str.length() == 10) {
+
+                regionCode = str.substring(0, 3);
+                userCode = formatUserCode(str.substring(3, 10));
+
+
+            }
             number = str;
             if (number.toCharArray()[0]=='7')
                 number = "+" + number;
@@ -59,11 +64,21 @@ public class PhoneNum {
         return raw.substring(0,3) + "-" + raw.substring(3,5) + "-" + raw.substring(5,7);
     }
 
+    private String formatUserCodeShort(String raw){
+        return raw.substring(0,2) + "-" + raw.substring(2,4) + "-" + raw.substring(4,6);
+    }
+
+    private String formatNumber(){
+        if (!state)
+            return "Invalid number format";
+        return stateCode + "("+regionCode+")"+userCode;
+    }
+
 
     @Override
     public String toString() {
         if(state)
-            return number;
+            return formatNumber();
         else return "Invalid number format";
     }
 }
