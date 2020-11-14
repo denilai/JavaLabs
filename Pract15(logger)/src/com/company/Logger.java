@@ -11,7 +11,7 @@ import java.util.Scanner;
 
 public class Logger {
 
-    public static void writeToLog(String path, String message){
+    public static boolean writeToLog(String path, String message){
         try {
             File logDir = new File (path);
             if (!logDir.exists())
@@ -23,9 +23,12 @@ public class Logger {
         }
         catch (FileNotFoundException a){
             System.out.println("Logger.toLog: Не удалось открыть файл " + a);
+            return false;
         } catch (IOException e) {
             e.printStackTrace();
+            return false;
         }
+        return true;
     }
 
     public static long sizeInBytes(String path) {// путь от пользователя до папки
@@ -48,36 +51,53 @@ public class Logger {
     }
 
 
-    public static String sizeOf(String path){
+    public static boolean sizeOf(String path){
+        if (path.equals("q"))
+            return false;
         long size = Logger.sizeInBytes(path);
         int pow = 0;
         String[]prefixes = new String[]{"B","KB","MB","GB","TB"};
         if (size>=Float.MAX_VALUE){
-            return "Out of bounds";
+            System.out.println("Out of bounds");
+            return false;
         }
         float bytes = size;
         while (bytes >= 1024) {
             bytes /= 1024;
             pow ++;
         }
-
-        return String.format("%.2f",bytes) + " " + prefixes[pow];
+        System.out.println(String.format("%.2f",bytes) + " " + prefixes[pow]);
+        return true;
     }
 
 
 
-    public static void copyFolders(File sourseDir, File destDir) throws IOException {
+    public static void copyFolders(File sourseDir, File destDir){
+        if (sourseDir.isFile())
+            try {
+                copyFile(sourseDir,destDir);
+                return;
+            }
+            catch (IOException a){
+                System.out.println("Logger.copyFolders :: IOException "+a);
+            }
         if (!destDir.exists()){
             destDir.mkdir();
         }
+
         File[]sons = sourseDir.listFiles();
         assert sons != null;
-        for (File son:sons){
-            if(son.isDirectory())
-                copyFolders(son,new File (destDir.getAbsolutePath()+"\\" + son.getName()));
-            if(son.isFile()){
-                copyFile(son,new File(destDir.getAbsolutePath()+"\\" + son.getName()));
+        try {
+            for (File son : sons) {
+                if (son.isDirectory())
+                    copyFolders(son, new File(destDir.getAbsolutePath() + "\\" + son.getName()));
+                if (son.isFile()) {
+                    copyFile(son, new File(destDir.getAbsolutePath() + "\\" + son.getName()));
+                }
             }
+        }
+        catch (IOException a){
+            System.out.println("Logger.copyFolders :: IOException "+a);
         }
     }
 
