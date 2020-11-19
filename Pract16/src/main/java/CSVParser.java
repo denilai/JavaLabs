@@ -10,9 +10,11 @@ public class CSVParser {
     private Scanner scanner;
     private float totalIncome;
     private float totalExpenses;
-    ArrayList<BankingUnit> bankingUnits;
+    private ArrayList<BankingUnit> bankingUnits;
 
-
+    public ArrayList<BankingUnit> getBankingUnits(){
+        return bankingUnits;
+    }
 
     CSVParser(String path)  {
         try {

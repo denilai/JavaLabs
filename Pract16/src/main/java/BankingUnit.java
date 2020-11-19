@@ -96,4 +96,18 @@ public class BankingUnit {
     public Date getDate() {
         return date;
     }
+
+    @Override
+    public String toString() {
+        return "BankingUnit{" +
+                "\naccountType='" + accountType + '\'' +
+                "\naccountNumber='" + accountNumber + '\'' +
+                "\ncurrency='" + currency + '\'' +
+                "\ndate=" + date +
+                "\nreference='" + reference + '\'' +
+                "\noperationsDescription='" + operationsDescription + '\'' +
+                "\nincome=" + income +
+                "\nexpense=" + expense +
+                "\n}";
+    }
 }
