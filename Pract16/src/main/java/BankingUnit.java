@@ -1,5 +1,3 @@
-package org.example;
-
 import java.nio.DoubleBuffer;
 import java.util.Date;
 import java.text.DateFormat;
