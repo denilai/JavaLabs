@@ -1,6 +1,4 @@
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -19,7 +17,8 @@ public class CSVParser {
     CSVParser(String path)  {
         try {
             reader = new BufferedReader(
-                    new FileReader(path));
+                    new InputStreamReader(new FileInputStream(path),"windows-1251"));
+
 
             String line;
             bankingUnits = new ArrayList<BankingUnit>();

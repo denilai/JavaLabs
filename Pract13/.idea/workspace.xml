@@ -20,7 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e26c6d78-ad25-41fb-9238-9d9a9a2e4bc6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Pract16(preM)/Pract16(preM).iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Pract16(preM)/src/com/company/BankingUnit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Pract16(preM)/src/com/company/CSVParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pract16/src/main/java/CSVParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Pract16/src/main/java/CSVParser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
