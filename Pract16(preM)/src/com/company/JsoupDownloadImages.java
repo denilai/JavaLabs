@@ -19,7 +19,7 @@ public class JsoupDownloadImages {
 
     public static List<String> parseImageFromResources(){
 
-        System.out.println("Images upload to the "+IMAGE_DESTINATION_FOLDER+" folder");
+        System.out.println("Images upload to the \\"+IMAGE_DESTINATION_FOLDER+" folder");
 
         List <String> imgNames = new ArrayList<>();
         try {
@@ -40,7 +40,7 @@ public class JsoupDownloadImages {
             }
         }
         catch (IOException a){
-            System.out.println(a);
+            a.printStackTrace();
         }
         return imgNames;
     }

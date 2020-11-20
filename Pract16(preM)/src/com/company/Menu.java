@@ -26,7 +26,7 @@ public class Menu {
                 check =  false;
             }
             catch (MyException a){
-                System.out.println(a);
+                a.printStackTrace();
                 check =  false;
             }
         }while(!check);
@@ -55,18 +55,32 @@ public class Menu {
                 break;
             }
             case 2:{
-                ArrayList<String> downloadedImagesNames =
-                        new ArrayList<>(JsoupDownloadImages.parseImageFromResources());
-                System.out.println("List of uploaded images: ");
-                downloadedImagesNames.forEach(System.out::println);
-            }
+                Scanner in = new Scanner(System.in);
+                String chs;
+                do {
+                    ArrayList<String> downloadedImagesNames =
+                            new ArrayList<>(JsoupDownloadImages.parseImageFromResources());
+                    System.out.println("List of uploaded images: ");
+                    downloadedImagesNames.forEach(System.out::println);
+                    boolean check;
+                    do {
+                        check = true;
+                        System.out.println("Repeat the task? (y or n)> ");
+                        chs = in.nextLine();
+                        if (!(chs.equals("y") || chs.equals("n"))) {
+                            System.out.println("This answer is not exist.\nTry again");
+                            check = false;
+                        }
+                    }while (!check) ;
+                }while (chs.equals("y"));
                 break;
+            }
             case 3: {
                 System.out.println("Program finished...");
                 return false;
             }
         }
-        System.out.println("Program finished...");
+        System.out.println("==== Program loop ====");
         return true;
     }
 }
