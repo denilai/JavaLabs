@@ -1,8 +1,8 @@
 package com.company;
 
+import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
-
 
 
 public class Menu {
@@ -54,7 +54,12 @@ public class Menu {
                 }while (chs.equals("y"));
                 break;
             }
-            case 2:
+            case 2:{
+                ArrayList<String> downloadedImagesNames =
+                        new ArrayList<>(JsoupDownloadImages.parseImageFromResources());
+                System.out.println("List of uploaded images: ");
+                downloadedImagesNames.forEach(System.out::println);
+            }
                 break;
             case 3: {
                 System.out.println("Program finished...");
