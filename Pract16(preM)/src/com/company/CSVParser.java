@@ -1,6 +1,7 @@
 package com.company;
 
-import javafx.util.Pair;
+//import javafx.util.Pair;
+
 import java.io.*;
 import java.util.*;
 import java.util.function.Function;
@@ -10,7 +11,7 @@ public class CSVParser {
     private Double totalIncome;
     private Double totalExpense;
     //private List<Object> totalExpenseOfCompanies;
-    private List<Pair<String, Double>> totalExpenseOfCompanies;
+    private List<AbstractMap.SimpleEntry<String, Double>> totalExpenseOfCompanies;
     private ArrayList<BankingUnit> bankingUnits;
 
 
@@ -83,15 +84,15 @@ public class CSVParser {
         companies.clear();
         companies.addAll(set);
 
-        List<Pair<String,List<BankingUnit>>> listOfList =
-                (List<Pair<String,List<BankingUnit>>>)
+        List<AbstractMap.SimpleEntry<String,List<BankingUnit>>> listOfList =
+                (List<AbstractMap.SimpleEntry<String,List<BankingUnit>>>)
                 map.apply(comp->FunctionalStuff.filterByCompany.apply(bankingUnits).apply((String)comp)).apply(companies);
 
 
         totalExpenseOfCompanies =
-                (List<Pair<String,Double>>)
+                (List<AbstractMap.SimpleEntry<String,Double>>)
                     map.apply(
-                        pair -> expenseOfCompany.apply((Pair<String, List<BankingUnit>>) pair)
+                        pair -> expenseOfCompany.apply((AbstractMap.SimpleEntry<String, List<BankingUnit>>) pair)
                     ).apply(listOfList);
     }
 
@@ -109,8 +110,8 @@ public class CSVParser {
     ;
 
     public Function<
-            Pair<String, List<BankingUnit>>,
-            Pair<String, Double>> expenseOfCompany = pair -> new Pair<>(
+            AbstractMap.SimpleEntry<String, List<BankingUnit>>,
+            AbstractMap.SimpleEntry<String, Double>> expenseOfCompany = pair -> new AbstractMap.SimpleEntry<>(
             pair.getKey(),
             FunctionalStuff.sumOfCollection(
                 (List<Double>)map.apply(el ->((BankingUnit) el).getExpense()).apply(

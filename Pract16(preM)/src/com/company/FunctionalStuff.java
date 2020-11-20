@@ -1,7 +1,8 @@
 package com.company;
 
-import javafx.util.Pair;
+//import javafx.util.Pair;
 
+import java.util.AbstractMap;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
@@ -28,7 +29,7 @@ public class FunctionalStuff {
     public static final Function<
             List<BankingUnit>,
             Function<
-                    String, Pair<String,List<BankingUnit> >>> filterByCompany =
+                    String, AbstractMap.SimpleEntry<String,List<BankingUnit> >>> filterByCompany =
             list -> comp -> {
                 List<BankingUnit> filtered = new ArrayList<>();
                 list.forEach(el -> {
@@ -36,7 +37,7 @@ public class FunctionalStuff {
                         filtered.add(el);
                     }
                 });
-                return new Pair<>(comp, filtered);
+                return new AbstractMap.SimpleEntry<>(comp, filtered);
             };
 
 
