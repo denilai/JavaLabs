@@ -47,6 +47,8 @@ public class JsoupDownloadImages {
         return imgNames;
     }
 
+    
+
     private static String downloadImage(String strImageURL ){
 
         //инициализируем имя переменной из пути к папке с вложениями
