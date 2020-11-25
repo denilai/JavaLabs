@@ -38,7 +38,7 @@ public class Menu {
                 Scanner in = new Scanner(System.in,"UTF-8");
                 String chs;
                 do {
-                    String pathToCSV = "src\\main\\resources\\movementList1.csv";
+                    String pathToCSV = "src\\main\\resources\\movementList.csv";
                     CSVParser parser = new CSVParser(pathToCSV);
                     parser.getReport();
                     boolean check;

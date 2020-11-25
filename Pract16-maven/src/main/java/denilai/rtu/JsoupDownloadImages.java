@@ -34,9 +34,9 @@ public class JsoupDownloadImages {
                 String strDataImageUrl = imageElement.attr("abs:data");
 
                 //загружаем изображеия по одному
-                if(!strImageURL.equals(""))
+                if(!strImageURL.equals("") && !strImageURL.contains("mail.ru/counter"))
                     imgNames.add(downloadImage(strImageURL));
-                if(!strDataImageUrl.equals(""))
+                if(!strDataImageUrl.equals("") && !strDataImageUrl.contains("mail.ru/counter"))
                     imgNames.add(downloadImage(strDataImageUrl));
 
             }
