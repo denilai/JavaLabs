@@ -2,8 +2,11 @@ package denilai.rtu;
 
 import java.io.*;
 import java.net.URL;
+import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
+import java.nio.file.Files;
+import java.util.Objects;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -16,7 +19,9 @@ public class JsoupDownloadImages {
 
     public static List<String> parseImageFromResources(){
 
-        System.out.println("Images upload to the \\"+IMAGE_DESTINATION_FOLDER+" folder");
+        System.out.println("Images upload to the \\"+IMAGE_DESTINATION_FOLDER);
+        deleteAllFilesFolder(IMAGE_DESTINATION_FOLDER);
+        System.out.println(IMAGE_DESTINATION_FOLDER+ " folder is definitely empty");
 
         List <String> imgNames = new ArrayList<String>();
         try {
@@ -29,18 +34,20 @@ public class JsoupDownloadImages {
                 String strDataImageUrl = imageElement.attr("abs:data");
 
                 //загружаем изображеия по одному
-                if(!strImageURL.equals(""))
+                if(!strImageURL.equals("") && !strImageURL.contains("mail.ru/counter"))
                     imgNames.add(downloadImage(strImageURL));
-                if(!strDataImageUrl.equals(""))
+                if(!strDataImageUrl.equals("") && !strDataImageUrl.contains("mail.ru/counter"))
                     imgNames.add(downloadImage(strDataImageUrl));
 
             }
         }
         catch (IOException a){
-            //a.printStackTrace();
+            a.printStackTrace();
         }
         return imgNames;
     }
+
+    
 
     private static String downloadImage(String strImageURL ){
 
@@ -71,9 +78,21 @@ public class JsoupDownloadImages {
             os.close();
 
         } catch (IOException e) {
-            //e.printStackTrace();
+            e.printStackTrace();
         }
         return strImageName;
+    }
+
+    public static void deleteAllFilesFolder(String path) {
+        try {
+            for (File myFile : Objects.requireNonNull(new File(path).listFiles()))
+
+                    if (myFile.isFile())
+                        Files.delete(Path.of(myFile.getAbsolutePath()));
+            }
+        catch (IOException | NullPointerException a){
+                a.printStackTrace();
+        }
     }
 
 }
